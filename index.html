@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/icons/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/output.css" />
+
+    <title>Dashboard - Overview</title>
+  </head>
+  <body>
+    <div class="bg-custom-grey h-screen">
+      <div class="p-4">
+        <!-- Navbar -->
+        <nav
+          class="bg-white rounded-3xl px-8 py-6 flex flex-row items-center mb-7"
+        >
+          <div
+            id="open-sidebar"
+            class="icon-container me-3 rounded-full bg-custom-grey p-3"
+            data-original="./src/icons/list.png"
+            data-hover="./src/icons/list-active.png"
+          >
+            <img src="./src/icons/list.png" alt="list-icon" class="size-5" />
+          </div>
+          <!-- Search -->
+          <div
+            class="hidden sm:flex flex-row py-3 px-5 bg-custom-grey rounded-3xl"
+          >
+            <img
+              src="./src/icons/search-normal.png"
+              alt="search-icon"
+              class="size-6 me-3"
+            />
+            <p class="text-base font-normal text-custom-dark-grey me-20">
+              Search listing or rental by name...
+            </p>
+          </div>
+          <!-- Profile -->
+          <div class="flex flex-row justify-end ms-auto">
+            <div class="flex flex-col me-2 items-end">
+              <p class="text-sm font-normal text-custom-dark-grey">Howdy</p>
+              <h2 class="text-base font-semibold text-custom-blue">
+                Ariana Xian
+              </h2>
+            </div>
+            <img
+              src="./src/images/avatar.png"
+              alt="avatar"
+              class="w-12 rounded-full"
+            />
+          </div>
+        </nav>
+
+        <!-- Content -->
+        <main>
+          <div class="content">
+            <div class="content-title">
+              <h1>Overview</h1>
+              <p>You've made huge progress</p>
+            </div>
+            <div class="button-primary">
+              <p class="px-3">Export Report</p>
+            </div>
+          </div>
+
+          <h2 class="subtitle">Statistics</h2>
+
+          <!-- Items Card -->
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-7">
+            <div
+              class="icon-container card-statistic active"
+              data-original="./src/icons/house.png"
+              data-hover="./src/icons/house-active.png"
+            >
+              <img src="./src/icons/house-active.png" alt="statistic-icon" />
+              <h3>27,492</h3>
+              <p>Listings</p>
+            </div>
+            <div
+              class="icon-container card-statistic"
+              data-original="./src/icons/building.png"
+              data-hover="./src/icons/building-active.png"
+            >
+              <img src="./src/icons/building.png" alt="statistic-icon" />
+              <h3>6,482</h3>
+              <p>Rentals</p>
+            </div>
+            <div
+              class="icon-container card-statistic"
+              data-original="./src/icons/users.png"
+              data-hover="./src/icons/users-active.png"
+            >
+              <img src="./src/icons/users.png" alt="statistic-icon" />
+              <h3>84,209,199</h3>
+              <p>Customers</p>
+            </div>
+            <div
+              class="icon-container card-statistic"
+              data-original="./src/icons/card.png"
+              data-hover="./src/icons/card-active.png"
+            >
+              <img src="./src/icons/card.png" alt="statistic-icon" />
+              <h3>563,993</h3>
+              <p>Transactions</p>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Sidebar -->
+      <aside
+        class="hidden top-0 h-screen w-full sm:w-72 p-0 sm:p-4"
+        id="sidebar"
+      >
+        <div class="sidebar">
+          <div class="sidebar-title">
+            <img src="./src/icons/logo.png" alt="logo" class="icon-logo" />
+            <h1>Nidejia</h1>
+            <div
+              class="icon-container close-icon"
+              data-original="./src/icons/x.png"
+              data-hover="./src/icons/x-active.png"
+            >
+              <img
+                src="./src/icons/x.png"
+                alt="close-ison"
+                id="close-sidebar"
+              />
+            </div>
+          </div>
+
+          <div class="menu-title">GENERAL</div>
+          <ul>
+            <li
+              class="menu-item active icon-container"
+              data-original="./src/icons/card.png"
+              data-hover="./src/icons/card-active.png"
+            >
+              <img src="./src/icons/card-active.png" alt="icon-menu-item" />
+              <h2>Overview</h2>
+            </li>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/house.png"
+              data-hover="./src/icons/house-active.png"
+            >
+              <img src="./src/icons/house.png" alt="icon-menu-item" />
+              <h2>My Listings</h2>
+            </li>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/building.png"
+              data-hover="./src/icons/building-active.png"
+            >
+              <img src="./src/icons/building.png" alt="icon-menu-item" />
+              <h2>My Rentals</h2>
+            </li>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/card.png"
+              data-hover="./src/icons/card-active.png"
+            >
+              <img src="./src/icons/card.png" alt="icon-menu-item" />
+              <h2>Transactions</h2>
+            </li>
+          </ul>
+
+          <div class="menu-title">OTHERS</div>
+          <ul>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/users.png"
+              data-hover="./src/icons/users-active.png"
+            >
+              <img src="./src/icons/users.png" alt="icon-menu-item" />
+              <h2>Customers</h2>
+            </li>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/ticket-discount.png"
+              data-hover="./src/icons/ticket-discount-active.png"
+            >
+              <img src="./src/icons/ticket-discount.png" alt="icon-menu-item" />
+              <h2>Vouchers</h2>
+            </li>
+            <li
+              class="menu-item icon-container"
+              data-original="./src/icons/setting.png"
+              data-hover="./src/icons/setting-active.png"
+            >
+              <img src="./src/icons/setting.png" alt="icon-menu-item" />
+              <h2>Settings</h2>
+            </li>
+          </ul>
+
+          <!-- Card Info -->
+          <div class="card-info">
+            <img src="./src/icons/medal-star.png" alt="medal-icon" />
+            <h2 class="card-title">Unlock Features</h2>
+            <p class="card-subtitle">More priviledge</p>
+            <div class="button-primary">
+              <p>Upgrade Now</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
