@@ -4,11 +4,11 @@ let sidebar = document.getElementById("sidebar");
 let closeSidebar = document.getElementById("close-sidebar");
 
 openSidebar.addEventListener("click", () => {
-  sidebar.classList.replace("hidden", "absolute");
+  sidebar.classList.remove("hidden");
 });
 
 closeSidebar.addEventListener("click", () => {
-  sidebar.classList.replace("absolute", "hidden");
+  sidebar.classList.add("hidden");
 });
 
 // Hover Icon

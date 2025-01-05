@@ -69,53 +69,115 @@
         <main>
           <div class="content">
             <div class="content-title">
-              <h1>Overview</h1>
-              <p>You've made huge progress</p>
+              <h1>My Listings</h1>
+              <p>Manage your house and get money</p>
             </div>
             <div class="button-primary">
-              <p class="px-3">Export Report</p>
+              <p class="px-3">Add New</p>
             </div>
           </div>
 
-          <h2 class="subtitle">Statistics</h2>
+          <h2 class="subtitle">Lists</h2>
 
           <!-- Items Card -->
-          <div class="grid grid-cols-1 sm:grid-cols-4 gap-7">
-            <div
-              class="icon-container card-statistic active"
-              data-original="./src/icons/house.png"
-              data-hover="./src/icons/house-active.png"
-            >
-              <img src="./src/icons/house-active.png" alt="statistic-icon" />
-              <h3>27,492</h3>
-              <p>Listings</p>
+          <div class="grid grid-cols-1">
+            <div class="card-list">
+              <img
+                src="./src/images/thumbnail-1.png"
+                alt="thumbnail"
+                class="card-image"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Tedjamudita Buxiang Parahyangan</h2>
+                <div class="card-list-informations">
+                  <div class="item-information">
+                    <img src="./src/icons/location.png" alt="info-item" />
+                    Shanghai, China
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/format-square.png" alt="info-item" />
+                    18,209 sqft
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/users-outline.png" alt="info-item" />
+                    3 people
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/wifi.png" alt="info-item" />
+                    10 gbps
+                  </div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <div class="card-button">Manage</div>
+                <div class="card-button">Preview</div>
+              </div>
             </div>
-            <div
-              class="icon-container card-statistic"
-              data-original="./src/icons/building.png"
-              data-hover="./src/icons/building-active.png"
-            >
-              <img src="./src/icons/building.png" alt="statistic-icon" />
-              <h3>6,482</h3>
-              <p>Rentals</p>
+
+            <div class="card-list">
+              <img
+                src="./src/images/thumbnail-2.png"
+                alt="thumbnail"
+                class="card-image"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Nayapati Circle Loop</h2>
+                <div class="card-list-informations">
+                  <div class="item-information">
+                    <img src="./src/icons/location.png" alt="info-item" />
+                    Bandung, Indonesia
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/format-square.png" alt="info-item" />
+                    18,209 sqft
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/users-outline.png" alt="info-item" />
+                    3 people
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/wifi.png" alt="info-item" />
+                    10 gbps
+                  </div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <div class="card-button">Manage</div>
+                <div class="card-button">Preview</div>
+              </div>
             </div>
-            <div
-              class="icon-container card-statistic"
-              data-original="./src/icons/users.png"
-              data-hover="./src/icons/users-active.png"
-            >
-              <img src="./src/icons/users.png" alt="statistic-icon" />
-              <h3>84,209,199</h3>
-              <p>Customers</p>
-            </div>
-            <div
-              class="icon-container card-statistic"
-              data-original="./src/icons/card.png"
-              data-hover="./src/icons/card-active.png"
-            >
-              <img src="./src/icons/card.png" alt="statistic-icon" />
-              <h3>563,993</h3>
-              <p>Transactions</p>
+
+            <div class="card-list">
+              <img
+                src="./src/images/thumbnail-3.png"
+                alt="thumbnail"
+                class="card-image"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Angga Island Long Coney</h2>
+                <div class="card-list-informations">
+                  <div class="item-information">
+                    <img src="./src/icons/location.png" alt="info-item" />
+                    Kuala, Malaysia
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/format-square.png" alt="info-item" />
+                    18,209 sqft
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/users-outline.png" alt="info-item" />
+                    3 people
+                  </div>
+                  <div class="item-information">
+                    <img src="./src/icons/wifi.png" alt="info-item" />
+                    10 gbps
+                  </div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <div class="card-button">Manage</div>
+                <div class="card-button">Preview</div>
+              </div>
             </div>
           </div>
         </main>
@@ -146,22 +208,22 @@
           <div class="menu-title">GENERAL</div>
           <ul>
             <li
-              class="menu-item active icon-container"
+              class="menu-item icon-container"
               data-original="./src/icons/card.png"
               data-hover="./src/icons/card-active.png"
             >
               <a href="index.html" class="flex">
-                <img src="./src/icons/card-active.png" alt="icon-menu-item" />
+                <img src="./src/icons/card.png" alt="icon-menu-item" />
                 <h2>Overview</h2>
               </a>
             </li>
             <li
-              class="menu-item icon-container"
+              class="menu-item active icon-container"
               data-original="./src/icons/house.png"
               data-hover="./src/icons/house-active.png"
             >
               <a href="listing.html" class="flex">
-                <img src="./src/icons/house.png" alt="icon-menu-item" />
+                <img src="./src/icons/house-active.png" alt="icon-menu-item" />
                 <h2>My Listings</h2>
               </a>
             </li>

@@ -12,6 +12,51 @@
   }
 }
 
+/* Navbar */
+.navbar {
+  @apply bg-white rounded-3xl px-8 py-6 flex flex-row items-center mb-7;
+
+  .button-sidebar {
+    @apply me-3 rounded-full bg-custom-grey p-3;
+
+    img {
+      @apply size-5;
+    }
+  }
+
+  .search {
+    @apply hidden sm:flex flex-row py-3 px-5 bg-custom-grey rounded-3xl;
+
+    img {
+      @apply size-6 me-3;
+    }
+
+    p {
+      @apply text-base font-normal text-custom-dark-grey me-20;
+    }
+  }
+
+  .profile {
+    @apply flex flex-row justify-end ms-auto;
+
+    .profile-body {
+      @apply flex flex-col me-2 items-end;
+
+      p {
+        @apply text-sm font-normal text-custom-dark-grey;
+      }
+
+      h2 {
+        @apply text-base font-semibold text-custom-blue;
+      }
+    }
+
+    img {
+      @apply w-12 rounded-full;
+    }
+  }
+}
+
 /* Main Content */
 .content {
   @apply flex flex-row items-center mb-7;
@@ -70,6 +115,43 @@
 
   .card-subtitle {
     @apply text-custom-dark-grey text-sm font-normal mb-4;
+  }
+}
+
+/* Card List */
+.card-list {
+  @apply flex flex-col sm:flex-row bg-white rounded-2xl p-4 mb-5;
+
+  .card-image {
+    @apply w-40 sm:w-32 h-32 sm:h-24 rounded-2xl mb-2 sm:mb-0 ms-auto me-auto sm:ms-0 sm:me-4;
+  }
+
+  .card-body {
+    @apply flex flex-col justify-center;
+
+    .card-title {
+      @apply text-lg font-bold text-custom-blue mb-5 sm:mb-2 text-center sm:text-left;
+    }
+
+    .card-list-informations {
+      @apply hidden lg:flex flex-row;
+
+      .item-information {
+        @apply text-sm font-semibold text-custom-blue flex me-5;
+
+        img {
+          @apply size-5 me-1;
+        }
+      }
+    }
+  }
+
+  .card-actions {
+    @apply flex flex-row items-center ms-auto me-auto sm:me-0;
+
+    .card-button {
+      @apply bg-custom-grey text-custom-blue px-6 py-3 rounded-full text-base font-semibold me-3 hover:bg-custom-orange hover:text-white;
+    }
   }
 }
 
