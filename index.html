@@ -24,6 +24,7 @@
     />
     <link rel="manifest" href="./src/icons/favicon/site.webmanifest" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,6 +32,7 @@
       rel="stylesheet"
     />
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./src/styles/output.css" />
 
     <title>Dashboard - Overview</title>
@@ -51,7 +53,12 @@
           <!-- Search -->
           <div class="search">
             <img src="./src/icons/search-normal.png" alt="search-icon" />
-            <p>Search listing or rental by name...</p>
+            <input
+              type="text"
+              id="search"
+              class="search-input"
+              placeholder="Search listing or rental by name..."
+            />
           </div>
           <!-- Profile -->
           <div class="profile">
@@ -71,7 +78,7 @@
               <p>You've made huge progress</p>
             </div>
             <div class="button-primary">
-              <p class="px-3">Export Report</p>
+              <a href="#" class="px-3">Export Report</a>
             </div>
           </div>
 
@@ -228,7 +235,7 @@
             <h2 class="card-title">Unlock Features</h2>
             <p class="card-subtitle">More priviledge</p>
             <div class="button-primary">
-              <p>Upgrade Now</p>
+              <a href="#">Upgrade Now</a>
             </div>
           </div>
         </div>
