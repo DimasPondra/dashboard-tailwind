@@ -125,6 +125,86 @@
   @apply bg-custom-grey text-custom-blue px-6 py-3 rounded-full text-base font-semibold me-3 hover:bg-custom-orange hover:text-white;
 }
 
+/* Card Users */
+.card-users {
+  @apply bg-white rounded-2xl p-4 mb-4;
+}
+.card-users .table-head {
+  @apply hidden md:flex flex-row mb-4;
+}
+.card-users .table-head .table-title {
+  @apply text-base font-semibold;
+}
+.card-users .head-1 {
+  @apply basis-1/4 lg:basis-3/6;
+}
+.card-users .head-2 {
+  @apply basis-1/4 lg:basis-1/6;
+}
+.card-users .user-item {
+  @apply flex flex-col md:flex-row items-start md:items-center mb-5;
+}
+.card-users .user-item .people {
+  @apply flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center mb-5 md:mb-0;
+}
+.card-users .user-item .people .avatar {
+  @apply size-16 rounded-full me-2;
+}
+.card-users .user-item .people .information .name {
+  @apply text-base font-semibold mb-1;
+}
+.card-users .user-item .people .information .occupation {
+  @apply text-sm font-normal text-custom-dark-grey;
+}
+.card-users .user-item .status {
+  @apply flex flex-row items-center justify-center  p-2 w-24 rounded-full;
+}
+.card-users .user-item .status.active {
+  @apply bg-lime-100;
+}
+.card-users .user-item .status.inactive {
+  @apply bg-red-100;
+}
+.card-users .user-item .status .dot {
+  @apply size-2 rounded-full me-1;
+}
+.card-users .user-item .status .dot.active {
+  @apply bg-custom-green;
+}
+.card-users .user-item .status .dot.inactive {
+  @apply bg-red-500;
+}
+.card-users .user-item .status .name {
+  @apply text-sm font-semibold;
+}
+.card-users .user-item .status .name.active {
+  @apply text-custom-green;
+}
+.card-users .user-item .status .name.inactive {
+  @apply text-red-500;
+}
+.card-users .user-item .task {
+  @apply text-base font-semibold mb-5 md:mb-0 hidden md:block;
+}
+.card-users .user-item .task span {
+  @apply text-purple-500;
+}
+.card-users .user-item .actions {
+  @apply flex flex-row md:flex-col lg:flex-row;
+}
+.card-users .user-item .actions .button {
+  @apply flex flex-row items-center justify-center bg-white border-custom-black border hover:bg-custom-black hover:border-none hover:text-white px-5 py-4 rounded-full;
+}
+.card-users .user-item .actions .button .icon {
+  @apply me-2 size-6;
+}
+.card-users .user-item .actions .button span {
+  @apply text-base font-medium;
+}
+.card-users .user-item .actions .button.active {
+  @apply bg-custom-black text-white;
+}
+
 /* Sidebar */
 .sidebar {
   @apply bg-white rounded-none sm:rounded-2xl p-6 h-full overflow-y-auto overscroll-auto shadow-2xl;
