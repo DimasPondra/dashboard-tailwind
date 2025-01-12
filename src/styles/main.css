@@ -16,6 +16,76 @@
   @apply size-5;
 }
 
+.btn {
+  @apply flex flex-row items-center py-3 px-6 rounded-2xl;
+}
+.btn.btn-primary {
+  @apply bg-custom-orange hover:bg-orange-400;
+}
+.btn.btn-outline-primary {
+  @apply border border-custom-orange;
+}
+.btn.btn-outline-primary a {
+  @apply text-custom-orange;
+}
+.btn.btn-outline-primary:hover {
+  @apply bg-orange-400;
+}
+.btn.btn-outline-primary:hover a {
+  @apply text-white;
+}
+.btn.btn-success {
+  @apply bg-green-500 hover:bg-green-600;
+}
+.btn.btn-outline-success {
+  @apply border border-green-500;
+}
+.btn.btn-outline-success a {
+  @apply text-green-500;
+}
+.btn.btn-outline-success:hover {
+  @apply bg-green-600;
+}
+.btn.btn-outline-success:hover a {
+  @apply text-white;
+}
+.btn.btn-danger {
+  @apply bg-red-500 hover:bg-red-600;
+}
+.btn.btn-outline-danger {
+  @apply border border-red-500;
+}
+.btn.btn-outline-danger a {
+  @apply text-red-500;
+}
+.btn.btn-outline-danger:hover {
+  @apply bg-red-600;
+}
+.btn.btn-outline-danger:hover a {
+  @apply text-white;
+}
+.btn.btn-info {
+  @apply bg-cyan-500 hover:bg-cyan-600;
+}
+.btn.btn-outline-info {
+  @apply border border-cyan-500;
+}
+.btn.btn-outline-info a {
+  @apply text-cyan-500;
+}
+.btn.btn-outline-info:hover {
+  @apply bg-cyan-600;
+}
+.btn.btn-outline-info:hover a {
+  @apply text-white;
+}
+.btn.btn-icon img {
+  @apply size-4;
+}
+.btn a {
+  @apply text-white text-base font-semibold;
+}
+
 /* Navbar */
 .navbar {
   @apply bg-white rounded-3xl px-8 py-6 flex flex-row items-center mb-7;
@@ -254,4 +324,79 @@ aside .sidebar .sidebar-menu ul .menu-item.active h2 {
 }
 .card-users .user-item .actions .button.active {
   @apply bg-custom-black text-white;
+}
+
+.card-1 {
+  @apply relative bg-white w-80 rounded-2xl;
+}
+.card-1 .card-image {
+  @apply rounded-t-2xl w-80 h-48 object-cover;
+}
+.card-1 .card-body {
+  @apply p-6;
+}
+.card-1 .card-body .card-title {
+  @apply text-lg font-medium mb-2;
+}
+.card-1 .card-body .card-description {
+  @apply text-sm font-normal;
+}
+.card-1 .card-label {
+  @apply absolute top-0 right-0 pt-4 pe-3;
+}
+.card-1 .card-label span {
+  @apply bg-white py-2 px-4 rounded-2xl text-xs font-normal;
+}
+.card-1 .card-label span.active {
+  @apply bg-green-400 text-white;
+}
+.card-1 .card-label span.inactive {
+  @apply bg-red-400 text-white;
+}
+
+.card-2 {
+  @apply relative bg-white w-80 p-6 rounded-2xl;
+}
+.card-2 .card-image {
+  @apply rounded-xl w-80 h-44 object-cover;
+}
+.card-2 .card-body {
+  @apply pt-6;
+}
+.card-2 .card-body .card-title {
+  @apply text-lg font-medium mb-2;
+}
+.card-2 .card-body .card-description {
+  @apply text-sm font-normal;
+}
+
+.card-profile-1 {
+  @apply flex flex-row gap-2 items-center;
+}
+.card-profile-1 .card-profile-image {
+  @apply size-20;
+}
+.card-profile-1 .card-profile-description .card-profile-name {
+  @apply text-lg font-semibold mb-1;
+}
+.card-profile-1 .card-profile-description .card-profile-job {
+  @apply text-sm font-light;
+}
+
+.container-table {
+  @apply flex flex-col bg-white p-6 rounded-2xl;
+}
+.container-table .table-responsive {
+  @apply overflow-x-auto;
+}
+.container-table .table-responsive table {
+  @apply table-fixed border border-collapse;
+}
+.container-table .table-responsive table th,
+.container-table .table-responsive table td {
+  @apply border px-5 py-2;
+}
+.container-table .table-responsive table th.table-head,
+.container-table .table-responsive table td.table-head {
+  @apply bg-slate-100;
 }/*# sourceMappingURL=main.css.map */

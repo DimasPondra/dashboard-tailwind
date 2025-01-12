@@ -15,3 +15,97 @@
         @apply size-5;
     }
 }
+
+.btn {
+    @apply flex flex-row items-center py-3 px-6 rounded-2xl;
+
+    &.btn-primary {
+        @apply bg-custom-orange hover:bg-orange-400;
+    }
+
+    &.btn-outline-primary {
+        @apply border border-custom-orange;
+
+        a {
+            @apply text-custom-orange;
+        }
+
+        &:hover {
+            @apply bg-orange-400;
+
+            a {
+                @apply text-white;
+            }
+        }
+    }
+
+    &.btn-success {
+        @apply bg-green-500 hover:bg-green-600;
+    }
+
+    &.btn-outline-success {
+        @apply border border-green-500;
+
+        a {
+            @apply text-green-500;
+        }
+
+        &:hover {
+            @apply bg-green-600;
+
+            a {
+                @apply text-white;
+            }
+        }
+    }
+
+    &.btn-danger {
+        @apply bg-red-500 hover:bg-red-600;
+    }
+
+    &.btn-outline-danger {
+        @apply border border-red-500;
+
+        a {
+            @apply text-red-500;
+        }
+
+        &:hover {
+            @apply bg-red-600;
+
+            a {
+                @apply text-white;
+            }
+        }
+    }
+
+    &.btn-info {
+        @apply bg-cyan-500 hover:bg-cyan-600;
+    }
+
+    &.btn-outline-info {
+        @apply border border-cyan-500;
+
+        a {
+            @apply text-cyan-500;
+        }
+
+        &:hover {
+            @apply bg-cyan-600;
+
+            a {
+                @apply text-white;
+            }
+        }
+    }
+
+    &.btn-icon {
+        img {
+            @apply size-4;
+        }
+    }
+
+    a {
+        @apply text-white text-base font-semibold;
+    }
+}

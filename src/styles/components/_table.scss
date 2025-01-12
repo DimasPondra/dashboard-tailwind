@@ -1,0 +1,22 @@
+@use "./library.scss";
+
+.container-table {
+    @apply flex flex-col bg-white p-6 rounded-2xl;
+
+    .table-responsive {
+        @apply overflow-x-auto;
+
+        table {
+            @apply table-fixed border border-collapse;
+
+            th,
+            td {
+                @apply border px-5 py-2;
+
+                &.table-head {
+                    @apply bg-slate-100;
+                }
+            }
+        }
+    }
+}
