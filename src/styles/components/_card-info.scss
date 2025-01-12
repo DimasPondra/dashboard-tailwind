@@ -1,0 +1,17 @@
+@use "./library.scss";
+
+.card-info {
+    @apply bg-custom-grey rounded-2xl p-5;
+
+    img {
+        @apply size-10 mb-4;
+    }
+
+    .card-title {
+        @apply text-base font-bold mb-1;
+    }
+
+    .card-subtitle {
+        @apply text-custom-dark-grey text-sm font-normal mb-4;
+    }
+}

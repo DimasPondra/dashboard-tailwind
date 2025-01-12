@@ -1,0 +1,17 @@
+@use "library.scss";
+
+.btn-primary {
+    @apply bg-custom-orange hover:bg-orange-400 p-3 rounded-3xl text-center;
+
+    a {
+        @apply text-base font-semibold text-white;
+    }
+}
+
+.btn-sidebar {
+    @apply me-3 rounded-full bg-custom-grey p-3;
+
+    img {
+        @apply size-5;
+    }
+}

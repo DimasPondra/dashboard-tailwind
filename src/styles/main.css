@@ -2,23 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 /* Buttons */
-/* Button Primary */
-.button-primary {
+.btn-primary {
   @apply bg-custom-orange hover:bg-orange-400 p-3 rounded-3xl text-center;
 }
-.button-primary a {
+.btn-primary a {
   @apply text-base font-semibold text-white;
+}
+
+.btn-sidebar {
+  @apply me-3 rounded-full bg-custom-grey p-3;
+}
+.btn-sidebar img {
+  @apply size-5;
 }
 
 /* Navbar */
 .navbar {
   @apply bg-white rounded-3xl px-8 py-6 flex flex-row items-center mb-7;
-}
-.navbar .button-sidebar {
-  @apply me-3 rounded-full bg-custom-grey p-3;
-}
-.navbar .button-sidebar img {
-  @apply size-5;
 }
 .navbar .search {
   @apply hidden sm:flex flex-row py-3 px-5 bg-custom-grey rounded-3xl;
@@ -30,7 +30,7 @@
   @apply text-base font-normal bg-custom-grey text-custom-dark-grey me-20 focus:outline-none;
 }
 .navbar .profile {
-  @apply flex flex-row justify-end ms-auto;
+  @apply flex flex-row justify-end items-center ms-auto;
 }
 .navbar .profile .profile-body {
   @apply flex flex-col me-2 items-end;
@@ -45,22 +45,73 @@
   @apply w-12 rounded-full;
 }
 
+/* Sidebar */
+aside .sidebar {
+  @apply bg-white rounded-none sm:rounded-2xl p-6 h-full overflow-y-auto overscroll-auto shadow-2xl;
+}
+aside .sidebar .sidebar-title {
+  @apply flex flex-row items-center mb-9;
+}
+aside .sidebar .sidebar-title .icon-logo {
+  @apply size-9 me-2.5;
+}
+aside .sidebar .sidebar-title h1 {
+  @apply basis-3/4 sm:basis-2/3 text-2xl font-extrabold text-custom-blue;
+}
+aside .sidebar .sidebar-title .close-icon {
+  @apply bg-custom-grey rounded-full p-1;
+}
+aside .sidebar .sidebar-title .close-icon img {
+  @apply size-5;
+}
+aside .sidebar .sidebar-menu .menu-title {
+  @apply text-sm font-semibold mb-3.5 text-custom-blue;
+}
+aside .sidebar .sidebar-menu ul {
+  @apply mb-10;
+}
+aside .sidebar .sidebar-menu ul .menu-item {
+  @apply flex flex-row items-center mb-6;
+}
+aside .sidebar .sidebar-menu ul .menu-item img {
+  @apply size-6 me-2;
+}
+aside .sidebar .sidebar-menu ul .menu-item h2 {
+  @apply text-base font-semibold text-custom-blue hover:text-custom-orange;
+}
+aside .sidebar .sidebar-menu ul .menu-item.active h2 {
+  @apply text-custom-orange;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex flex-row mt-2 justify-center sm:justify-start;
+}
+.pagination .page {
+  @apply size-10 rounded-full py-2 text-center bg-white text-custom-blue text-base font-semibold me-3 overflow-hidden;
+}
+.pagination .page.active {
+  @apply bg-custom-blue text-white;
+}
+.pagination .page:hover {
+  @apply bg-custom-blue text-white;
+}
+
 /* Main Content */
-.content {
+.content-header {
   @apply flex flex-row items-center mb-7;
 }
-.content .content-title {
+.content-header .content-title {
   @apply flex flex-col me-auto;
 }
-.content .content-title h1 {
+.content-header .content-title h2 {
   @apply text-custom-blue text-3xl font-bold mb-1;
 }
-.content .content-title p {
+.content-header .content-title p {
   @apply text-custom-blue text-base font-normal;
 }
 
-/* Subtitle */
-.subtitle {
+.content-subtitle {
   @apply text-custom-blue text-lg font-bold mb-3;
 }
 
@@ -127,7 +178,7 @@
 
 /* Card Users */
 .card-users {
-  @apply bg-white rounded-2xl p-4 mb-4;
+  @apply md:bg-white rounded-2xl p-4 md:px-8 lg:px-4 mb-4;
 }
 .card-users .table-head {
   @apply hidden md:flex flex-row mb-4;
@@ -142,13 +193,13 @@
   @apply basis-1/4 lg:basis-1/6;
 }
 .card-users .user-item {
-  @apply flex flex-col md:flex-row items-start md:items-center mb-5;
+  @apply flex flex-col md:flex-row items-center mb-8 md:mb-6 bg-white md:bg-none p-5 md:p-0 rounded-3xl md:rounded-none;
 }
 .card-users .user-item .people {
-  @apply flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center mb-5 md:mb-0;
+  @apply flex flex-col lg:flex-row items-center md:items-start lg:items-center mb-5 md:mb-0 text-center md:text-left;
 }
 .card-users .user-item .people .avatar {
-  @apply size-16 rounded-full me-2;
+  @apply size-24 md:size-16 rounded-full md:me-2;
 }
 .card-users .user-item .people .information .name {
   @apply text-base font-semibold mb-1;
@@ -193,66 +244,14 @@
   @apply flex flex-row md:flex-col lg:flex-row;
 }
 .card-users .user-item .actions .button {
-  @apply flex flex-row items-center justify-center bg-white border-custom-black border hover:bg-custom-black hover:border-none hover:text-white px-5 py-4 rounded-full;
+  @apply flex flex-row items-center justify-center bg-white border-custom-black border hover:bg-custom-black hover:text-white px-5 py-4 rounded-full;
 }
 .card-users .user-item .actions .button .icon {
-  @apply me-2 size-6;
+  @apply me-0 lg:me-2 size-4 lg:size-6;
 }
 .card-users .user-item .actions .button span {
-  @apply text-base font-medium;
+  @apply text-base font-medium hidden lg:block;
 }
 .card-users .user-item .actions .button.active {
   @apply bg-custom-black text-white;
-}
-
-/* Sidebar */
-.sidebar {
-  @apply bg-white rounded-none sm:rounded-2xl p-6 h-full overflow-y-auto overscroll-auto shadow-2xl;
-}
-.sidebar .sidebar-title {
-  @apply flex flex-row items-center mb-9;
-}
-.sidebar .sidebar-title .icon-logo {
-  @apply size-9 me-2.5;
-}
-.sidebar .sidebar-title h1 {
-  @apply basis-3/4 sm:basis-2/3 text-2xl font-extrabold text-custom-blue;
-}
-.sidebar .sidebar-title .close-icon {
-  @apply bg-custom-grey rounded-full p-1;
-}
-.sidebar .sidebar-title .close-icon img {
-  @apply size-5;
-}
-.sidebar .menu-title {
-  @apply text-sm font-semibold mb-3.5 text-custom-blue;
-}
-.sidebar ul {
-  @apply mb-10;
-}
-.sidebar ul .menu-item {
-  @apply flex flex-row items-center mb-6;
-}
-.sidebar ul .menu-item img {
-  @apply size-6 me-2;
-}
-.sidebar ul .menu-item h2 {
-  @apply text-base font-semibold text-custom-blue hover:text-custom-orange;
-}
-.sidebar ul .menu-item.active h2 {
-  @apply text-custom-orange;
-}
-
-/* Pagination */
-.pagination {
-  @apply flex flex-row mt-2 justify-center sm:justify-start;
-}
-.pagination .page {
-  @apply size-10 rounded-full py-2 text-center bg-white text-custom-blue text-base font-semibold me-3 overflow-hidden;
-}
-.pagination .page.active {
-  @apply bg-custom-blue text-white;
-}
-.pagination .page:hover {
-  @apply bg-custom-blue text-white;
 }/*# sourceMappingURL=main.css.map */

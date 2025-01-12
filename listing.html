@@ -1,318 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./src/icons/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/icons/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./src/icons/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./src/icons/favicon/site.webmanifest" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./src/icons/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./src/icons/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./src/icons/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./src/icons/favicon/site.webmanifest" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./src/styles/output.css" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./src/styles/output.css" />
 
-    <title>Dashboard - Listing</title>
-  </head>
-  <body>
-    <div class="bg-custom-grey relative">
-      <div class="p-4 h-screen overflow-y-auto overscroll-auto">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <div
-            id="open-sidebar"
-            class="icon-container button-sidebar"
-            data-original="./src/icons/list.png"
-            data-hover="./src/icons/list-active.png"
-          >
-            <img src="./src/icons/list.png" alt="list-icon" />
-          </div>
-          <!-- Search -->
-          <div class="search">
-            <img src="./src/icons/search-normal.png" alt="search-icon" />
-            <input
-              type="text"
-              id="search"
-              class="search-input"
-              placeholder="Search listing or rental by name..."
-            />
-          </div>
-          <!-- Profile -->
-          <div class="profile">
-            <div class="profile-body">
-              <p>Howdy</p>
-              <h2>Ariana Xian</h2>
+        <title>Dashboard - Listing</title>
+    </head>
+    <body>
+        <div class="bg-custom-grey relative">
+            <div class="p-4 h-screen overflow-y-auto overscroll-auto">
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <div
+                        id="open-sidebar"
+                        class="icon-container btn-sidebar"
+                        data-original="./src/icons/list.png"
+                        data-hover="./src/icons/list-active.png"
+                    >
+                        <img src="./src/icons/list.png" alt="list-icon" />
+                    </div>
+                    <!-- Search -->
+                    <div class="search">
+                        <img
+                            src="./src/icons/search-normal.png"
+                            alt="search-icon"
+                        />
+                        <input
+                            type="text"
+                            id="search"
+                            class="search-input"
+                            placeholder="Search listing or rental by name..."
+                        />
+                    </div>
+                    <!-- Profile -->
+                    <div class="profile">
+                        <div class="profile-body">
+                            <p>Howdy</p>
+                            <h2>Ariana Xian</h2>
+                        </div>
+                        <img src="./src/images/avatar.png" alt="avatar" />
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <main>
+                    <section class="content-header">
+                        <div class="content-title">
+                            <h2>My Listings</h2>
+                            <p>Manage your house and get money</p>
+                        </div>
+                        <div class="btn-primary">
+                            <a href="#" class="px-3">Add New</a>
+                        </div>
+                    </section>
+
+                    <h3 class="content-subtitle">Lists</h3>
+
+                    <!-- Items Card -->
+                    <div class="grid grid-cols-1">
+                        <div class="card-list">
+                            <img
+                                src="./src/images/thumbnail-1.png"
+                                alt="thumbnail"
+                                class="card-image"
+                            />
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    Tedjamudita Buxiang Parahyangan
+                                </h2>
+                                <div class="card-list-informations">
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/location.png"
+                                            alt="info-item"
+                                        />
+                                        Shanghai, China
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/format-square.png"
+                                            alt="info-item"
+                                        />
+                                        18,209 sqft
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/users-outline.png"
+                                            alt="info-item"
+                                        />
+                                        3 people
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/wifi.png"
+                                            alt="info-item"
+                                        />
+                                        10 gbps
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="card-button">Manage</a>
+                                <a href="#" class="card-button">Preview</a>
+                            </div>
+                        </div>
+
+                        <div class="card-list">
+                            <img
+                                src="./src/images/thumbnail-2.png"
+                                alt="thumbnail"
+                                class="card-image"
+                            />
+                            <div class="card-body">
+                                <h2 class="card-title">Nayapati Circle Loop</h2>
+                                <div class="card-list-informations">
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/location.png"
+                                            alt="info-item"
+                                        />
+                                        Bandung, Indonesia
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/format-square.png"
+                                            alt="info-item"
+                                        />
+                                        18,209 sqft
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/users-outline.png"
+                                            alt="info-item"
+                                        />
+                                        3 people
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/wifi.png"
+                                            alt="info-item"
+                                        />
+                                        10 gbps
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="card-button">Manage</a>
+                                <a href="#" class="card-button">Preview</a>
+                            </div>
+                        </div>
+
+                        <div class="card-list">
+                            <img
+                                src="./src/images/thumbnail-3.png"
+                                alt="thumbnail"
+                                class="card-image"
+                            />
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    Angga Island Long Coney
+                                </h2>
+                                <div class="card-list-informations">
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/location.png"
+                                            alt="info-item"
+                                        />
+                                        Kuala, Malaysia
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/format-square.png"
+                                            alt="info-item"
+                                        />
+                                        18,209 sqft
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/users-outline.png"
+                                            alt="info-item"
+                                        />
+                                        3 people
+                                    </div>
+                                    <div class="item-information">
+                                        <img
+                                            src="./src/icons/wifi.png"
+                                            alt="info-item"
+                                        />
+                                        10 gbps
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="#" class="card-button">Manage</a>
+                                <a href="#" class="card-button">Preview</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page active">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a class="page">...</a>
+                        <a href="#" class="page">10</a>
+                    </div>
+                </main>
             </div>
-            <img src="./src/images/avatar.png" alt="avatar" />
-          </div>
-        </nav>
 
-        <!-- Content -->
-        <main>
-          <div class="content">
-            <div class="content-title">
-              <h1>My Listings</h1>
-              <p>Manage your house and get money</p>
-            </div>
-            <div class="button-primary">
-              <a href="#" class="px-3">Add New</a>
-            </div>
-          </div>
+            <!-- Sidebar -->
+            <aside
+                class="absolute hidden top-0 h-screen w-full sm:w-72 p-0 sm:p-4"
+                id="sidebar"
+            >
+                <div class="sidebar">
+                    <div class="sidebar-title">
+                        <img
+                            src="./src/icons/logo.png"
+                            alt="logo"
+                            class="icon-logo"
+                        />
+                        <h1>Nidejia</h1>
+                        <div
+                            class="icon-container close-icon"
+                            data-original="./src/icons/x.png"
+                            data-hover="./src/icons/x-active.png"
+                        >
+                            <img
+                                src="./src/icons/x.png"
+                                alt="close-ison"
+                                id="close-sidebar"
+                            />
+                        </div>
+                    </div>
 
-          <h2 class="subtitle">Lists</h2>
+                    <div class="sidebar-menu">
+                        <div class="menu-title">GENERAL</div>
+                        <ul>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/card.png"
+                                data-hover="./src/icons/card-active.png"
+                            >
+                                <a href="index.html" class="flex">
+                                    <img
+                                        src="./src/icons/card.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>Overview</h2>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item active icon-container"
+                                data-original="./src/icons/house.png"
+                                data-hover="./src/icons/house-active.png"
+                            >
+                                <a href="listing.html" class="flex">
+                                    <img
+                                        src="./src/icons/house-active.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>My Listings</h2>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/building.png"
+                                data-hover="./src/icons/building-active.png"
+                            >
+                                <a href="#" class="flex">
+                                    <img
+                                        src="./src/icons/building.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>My Rentals</h2>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/card.png"
+                                data-hover="./src/icons/card-active.png"
+                            >
+                                <a href="#" class="flex">
+                                    <img
+                                        src="./src/icons/card.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>Transactions</h2>
+                                </a>
+                            </li>
+                        </ul>
 
-          <!-- Items Card -->
-          <div class="grid grid-cols-1">
-            <div class="card-list">
-              <img
-                src="./src/images/thumbnail-1.png"
-                alt="thumbnail"
-                class="card-image"
-              />
-              <div class="card-body">
-                <h2 class="card-title">Tedjamudita Buxiang Parahyangan</h2>
-                <div class="card-list-informations">
-                  <div class="item-information">
-                    <img src="./src/icons/location.png" alt="info-item" />
-                    Shanghai, China
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/format-square.png" alt="info-item" />
-                    18,209 sqft
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/users-outline.png" alt="info-item" />
-                    3 people
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/wifi.png" alt="info-item" />
-                    10 gbps
-                  </div>
+                        <div class="menu-title">OTHERS</div>
+                        <ul>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/users.png"
+                                data-hover="./src/icons/users-active.png"
+                            >
+                                <a href="users.html" class="flex">
+                                    <img
+                                        src="./src/icons/users.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>Customers</h2>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/ticket-discount.png"
+                                data-hover="./src/icons/ticket-discount-active.png"
+                            >
+                                <a href="#" class="flex">
+                                    <img
+                                        src="./src/icons/ticket-discount.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>Vouchers</h2>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item icon-container"
+                                data-original="./src/icons/setting.png"
+                                data-hover="./src/icons/setting-active.png"
+                            >
+                                <a href="#" class="flex">
+                                    <img
+                                        src="./src/icons/setting.png"
+                                        alt="icon-menu-item"
+                                    />
+                                    <h2>Settings</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card Info -->
+                    <div class="card-info">
+                        <img
+                            src="./src/icons/medal-star.png"
+                            alt="medal-icon"
+                        />
+                        <h2 class="card-title">Unlock Features</h2>
+                        <p class="card-subtitle">More priviledge</p>
+                        <div class="btn-primary">
+                            <a href="#">Upgrade Now</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="card-button">Manage</a>
-                <a href="#" class="card-button">Preview</a>
-              </div>
-            </div>
-
-            <div class="card-list">
-              <img
-                src="./src/images/thumbnail-2.png"
-                alt="thumbnail"
-                class="card-image"
-              />
-              <div class="card-body">
-                <h2 class="card-title">Nayapati Circle Loop</h2>
-                <div class="card-list-informations">
-                  <div class="item-information">
-                    <img src="./src/icons/location.png" alt="info-item" />
-                    Bandung, Indonesia
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/format-square.png" alt="info-item" />
-                    18,209 sqft
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/users-outline.png" alt="info-item" />
-                    3 people
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/wifi.png" alt="info-item" />
-                    10 gbps
-                  </div>
-                </div>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="card-button">Manage</a>
-                <a href="#" class="card-button">Preview</a>
-              </div>
-            </div>
-
-            <div class="card-list">
-              <img
-                src="./src/images/thumbnail-3.png"
-                alt="thumbnail"
-                class="card-image"
-              />
-              <div class="card-body">
-                <h2 class="card-title">Angga Island Long Coney</h2>
-                <div class="card-list-informations">
-                  <div class="item-information">
-                    <img src="./src/icons/location.png" alt="info-item" />
-                    Kuala, Malaysia
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/format-square.png" alt="info-item" />
-                    18,209 sqft
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/users-outline.png" alt="info-item" />
-                    3 people
-                  </div>
-                  <div class="item-information">
-                    <img src="./src/icons/wifi.png" alt="info-item" />
-                    10 gbps
-                  </div>
-                </div>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="card-button">Manage</a>
-                <a href="#" class="card-button">Preview</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination -->
-          <div class="pagination">
-            <a href="#" class="page active">1</a>
-            <a href="#" class="page">2</a>
-            <a href="#" class="page">3</a>
-            <a class="page">...</a>
-            <a href="#" class="page">10</a>
-          </div>
-        </main>
-      </div>
-
-      <!-- Sidebar -->
-      <aside
-        class="absolute hidden top-0 h-screen w-full sm:w-72 p-0 sm:p-4"
-        id="sidebar"
-      >
-        <div class="sidebar">
-          <div class="sidebar-title">
-            <img src="./src/icons/logo.png" alt="logo" class="icon-logo" />
-            <h1>Nidejia</h1>
-            <div
-              class="icon-container close-icon"
-              data-original="./src/icons/x.png"
-              data-hover="./src/icons/x-active.png"
-            >
-              <img
-                src="./src/icons/x.png"
-                alt="close-ison"
-                id="close-sidebar"
-              />
-            </div>
-          </div>
-
-          <div class="menu-title">GENERAL</div>
-          <ul>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/card.png"
-              data-hover="./src/icons/card-active.png"
-            >
-              <a href="index.html" class="flex">
-                <img src="./src/icons/card.png" alt="icon-menu-item" />
-                <h2>Overview</h2>
-              </a>
-            </li>
-            <li
-              class="menu-item active icon-container"
-              data-original="./src/icons/house.png"
-              data-hover="./src/icons/house-active.png"
-            >
-              <a href="listing.html" class="flex">
-                <img src="./src/icons/house-active.png" alt="icon-menu-item" />
-                <h2>My Listings</h2>
-              </a>
-            </li>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/building.png"
-              data-hover="./src/icons/building-active.png"
-            >
-              <a href="#" class="flex">
-                <img src="./src/icons/building.png" alt="icon-menu-item" />
-                <h2>My Rentals</h2>
-              </a>
-            </li>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/card.png"
-              data-hover="./src/icons/card-active.png"
-            >
-              <a href="#" class="flex">
-                <img src="./src/icons/card.png" alt="icon-menu-item" />
-                <h2>Transactions</h2>
-              </a>
-            </li>
-          </ul>
-
-          <div class="menu-title">OTHERS</div>
-          <ul>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/users.png"
-              data-hover="./src/icons/users-active.png"
-            >
-              <a href="users.html" class="flex">
-                <img src="./src/icons/users.png" alt="icon-menu-item" />
-                <h2>Customers</h2>
-              </a>
-            </li>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/ticket-discount.png"
-              data-hover="./src/icons/ticket-discount-active.png"
-            >
-              <a href="#" class="flex">
-                <img
-                  src="./src/icons/ticket-discount.png"
-                  alt="icon-menu-item"
-                />
-                <h2>Vouchers</h2>
-              </a>
-            </li>
-            <li
-              class="menu-item icon-container"
-              data-original="./src/icons/setting.png"
-              data-hover="./src/icons/setting-active.png"
-            >
-              <a href="#" class="flex">
-                <img src="./src/icons/setting.png" alt="icon-menu-item" />
-                <h2>Settings</h2>
-              </a>
-            </li>
-          </ul>
-
-          <!-- Card Info -->
-          <div class="card-info">
-            <img src="./src/icons/medal-star.png" alt="medal-icon" />
-            <h2 class="card-title">Unlock Features</h2>
-            <p class="card-subtitle">More priviledge</p>
-            <div class="button-primary">
-              <a href="#">Upgrade Now</a>
-            </div>
-          </div>
+            </aside>
         </div>
-      </aside>
-    </div>
 
-    <script src="./src/scripts/main.js"></script>
-  </body>
+        <script src="./src/scripts/main.js"></script>
+    </body>
 </html>

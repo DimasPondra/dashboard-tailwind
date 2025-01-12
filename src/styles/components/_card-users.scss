@@ -1,0 +1,107 @@
+@use "./library.scss";
+
+.card-users {
+    @apply md:bg-white rounded-2xl p-4 md:px-8 lg:px-4 mb-4;
+
+    .table-head {
+        @apply hidden md:flex flex-row mb-4;
+
+        .table-title {
+            @apply text-base font-semibold;
+        }
+    }
+
+    .head-1 {
+        @apply basis-1/4 lg:basis-3/6;
+    }
+
+    .head-2 {
+        @apply basis-1/4 lg:basis-1/6;
+    }
+
+    .user-item {
+        @apply flex flex-col md:flex-row items-center mb-8 md:mb-6 bg-white md:bg-none p-5 md:p-0 rounded-3xl md:rounded-none;
+
+        .people {
+            @apply flex flex-col lg:flex-row items-center md:items-start lg:items-center mb-5 md:mb-0 text-center md:text-left;
+
+            .avatar {
+                @apply size-24 md:size-16 rounded-full md:me-2;
+            }
+
+            .information {
+                .name {
+                    @apply text-base font-semibold mb-1;
+                }
+
+                .occupation {
+                    @apply text-sm font-normal text-custom-dark-grey;
+                }
+            }
+        }
+
+        .status {
+            @apply flex flex-row items-center justify-center  p-2 w-24 rounded-full;
+
+            &.active {
+                @apply bg-lime-100;
+            }
+
+            &.inactive {
+                @apply bg-red-100;
+            }
+
+            .dot {
+                @apply size-2 rounded-full me-1;
+
+                &.active {
+                    @apply bg-custom-green;
+                }
+
+                &.inactive {
+                    @apply bg-red-500;
+                }
+            }
+
+            .name {
+                @apply text-sm font-semibold;
+
+                &.active {
+                    @apply text-custom-green;
+                }
+
+                &.inactive {
+                    @apply text-red-500;
+                }
+            }
+        }
+
+        .task {
+            @apply text-base font-semibold mb-5 md:mb-0 hidden md:block;
+
+            span {
+                @apply text-purple-500;
+            }
+        }
+
+        .actions {
+            @apply flex flex-row md:flex-col lg:flex-row;
+
+            .button {
+                @apply flex flex-row items-center justify-center bg-white border-custom-black border hover:bg-custom-black hover:text-white px-5 py-4 rounded-full;
+
+                .icon {
+                    @apply me-0 lg:me-2 size-4 lg:size-6;
+                }
+
+                span {
+                    @apply text-base font-medium hidden lg:block;
+                }
+
+                &.active {
+                    @apply bg-custom-black text-white;
+                }
+            }
+        }
+    }
+}

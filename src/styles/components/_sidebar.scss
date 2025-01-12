@@ -1,0 +1,55 @@
+@use "./library.scss";
+
+aside {
+    .sidebar {
+        @apply bg-white rounded-none sm:rounded-2xl p-6 h-full overflow-y-auto overscroll-auto shadow-2xl;
+
+        .sidebar-title {
+            @apply flex flex-row items-center mb-9;
+
+            .icon-logo {
+                @apply size-9 me-2.5;
+            }
+
+            h1 {
+                @apply basis-3/4 sm:basis-2/3 text-2xl font-extrabold text-custom-blue;
+            }
+
+            .close-icon {
+                @apply bg-custom-grey rounded-full p-1;
+
+                img {
+                    @apply size-5;
+                }
+            }
+        }
+
+        .sidebar-menu {
+            .menu-title {
+                @apply text-sm font-semibold mb-3.5 text-custom-blue;
+            }
+
+            ul {
+                @apply mb-10;
+
+                .menu-item {
+                    @apply flex flex-row items-center mb-6;
+
+                    img {
+                        @apply size-6 me-2;
+                    }
+
+                    h2 {
+                        @apply text-base font-semibold text-custom-blue hover:text-custom-orange;
+                    }
+
+                    &.active {
+                        h2 {
+                            @apply text-custom-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

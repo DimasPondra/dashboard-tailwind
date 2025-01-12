@@ -1,0 +1,21 @@
+@use "./library.scss";
+
+.content-header {
+    @apply flex flex-row items-center mb-7;
+
+    .content-title {
+        @apply flex flex-col me-auto;
+
+        h2 {
+            @apply text-custom-blue text-3xl font-bold mb-1;
+        }
+
+        p {
+            @apply text-custom-blue text-base font-normal;
+        }
+    }
+}
+
+.content-subtitle {
+    @apply text-custom-blue text-lg font-bold mb-3;
+}

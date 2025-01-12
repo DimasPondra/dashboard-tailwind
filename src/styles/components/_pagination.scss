@@ -1,0 +1,17 @@
+@use "library.scss";
+
+.pagination {
+    @apply flex flex-row mt-2 justify-center sm:justify-start;
+
+    .page {
+        @apply size-10 rounded-full py-2 text-center bg-white text-custom-blue text-base font-semibold me-3 overflow-hidden;
+
+        &.active {
+            @apply bg-custom-blue text-white;
+        }
+
+        &:hover {
+            @apply bg-custom-blue text-white;
+        }
+    }
+}

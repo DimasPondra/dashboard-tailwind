@@ -1,0 +1,37 @@
+@use "./library.scss";
+
+.card-list {
+    @apply flex flex-col sm:flex-row bg-white rounded-2xl p-4 mb-5;
+
+    .card-image {
+        @apply w-40 sm:w-32 h-32 sm:h-24 rounded-2xl mb-2 sm:mb-0 ms-auto me-auto sm:ms-0 sm:me-4;
+    }
+
+    .card-body {
+        @apply flex flex-col justify-center;
+
+        .card-title {
+            @apply text-lg font-bold text-custom-blue mb-5 sm:mb-2 text-center sm:text-left;
+        }
+
+        .card-list-informations {
+            @apply hidden lg:flex flex-row;
+
+            .item-information {
+                @apply text-sm font-semibold text-custom-blue flex me-5;
+
+                img {
+                    @apply size-5 me-1;
+                }
+            }
+        }
+    }
+
+    .card-actions {
+        @apply flex flex-row items-center ms-auto me-auto sm:me-0;
+
+        .card-button {
+            @apply bg-custom-grey text-custom-blue px-6 py-3 rounded-full text-base font-semibold me-3 hover:bg-custom-orange hover:text-white;
+        }
+    }
+}
