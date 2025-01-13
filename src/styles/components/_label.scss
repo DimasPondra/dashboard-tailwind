@@ -1,0 +1,73 @@
+@use "./library.scss";
+
+.label {
+    @apply flex flex-row gap-1 rounded-3xl py-2 px-4 items-center;
+
+    .dot {
+        @apply size-2 rounded-full;
+    }
+
+    span {
+        @apply text-base font-semibold;
+    }
+
+    &.label-green {
+        @apply bg-green-200;
+
+        .dot {
+            @apply bg-green-500;
+        }
+
+        span {
+            @apply text-green-500;
+        }
+    }
+
+    &.label-red {
+        @apply bg-red-200;
+
+        .dot {
+            @apply bg-red-500;
+        }
+
+        span {
+            @apply text-red-500;
+        }
+    }
+
+    &.label-gray {
+        @apply bg-gray-200;
+
+        .dot {
+            @apply bg-gray-500;
+        }
+
+        span {
+            @apply text-gray-500;
+        }
+    }
+
+    &.label-orange {
+        @apply bg-orange-200;
+
+        .dot {
+            @apply bg-orange-500;
+        }
+
+        span {
+            @apply text-orange-500;
+        }
+    }
+
+    &.label-blue {
+        @apply bg-blue-200;
+
+        .dot {
+            @apply bg-blue-500;
+        }
+
+        span {
+            @apply text-blue-500;
+        }
+    }
+}

@@ -399,4 +399,59 @@ aside .sidebar .sidebar-menu ul .menu-item.active h2 {
 .container-table .table-responsive table th.table-head,
 .container-table .table-responsive table td.table-head {
   @apply bg-slate-100;
+}
+
+.label {
+  @apply flex flex-row gap-1 rounded-3xl py-2 px-4 items-center;
+}
+.label .dot {
+  @apply size-2 rounded-full;
+}
+.label span {
+  @apply text-base font-semibold;
+}
+.label.label-green {
+  @apply bg-green-200;
+}
+.label.label-green .dot {
+  @apply bg-green-500;
+}
+.label.label-green span {
+  @apply text-green-500;
+}
+.label.label-red {
+  @apply bg-red-200;
+}
+.label.label-red .dot {
+  @apply bg-red-500;
+}
+.label.label-red span {
+  @apply text-red-500;
+}
+.label.label-gray {
+  @apply bg-gray-200;
+}
+.label.label-gray .dot {
+  @apply bg-gray-500;
+}
+.label.label-gray span {
+  @apply text-gray-500;
+}
+.label.label-orange {
+  @apply bg-orange-200;
+}
+.label.label-orange .dot {
+  @apply bg-orange-500;
+}
+.label.label-orange span {
+  @apply text-orange-500;
+}
+.label.label-blue {
+  @apply bg-blue-200;
+}
+.label.label-blue .dot {
+  @apply bg-blue-500;
+}
+.label.label-blue span {
+  @apply text-blue-500;
 }/*# sourceMappingURL=main.css.map */
