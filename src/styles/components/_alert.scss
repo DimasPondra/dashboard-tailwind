@@ -1,0 +1,45 @@
+@use "./library.scss";
+
+.btn-alert {
+    @apply relative text-white p-4 rounded-2xl;
+
+    &.btn-alert-blue {
+        @apply bg-blue-500;
+    }
+
+    &.btn-alert-green {
+        @apply bg-green-500;
+    }
+}
+
+.alert {
+    @apply absolute items-center text-white opacity-95 top-0 right-0 p-4 mt-8 mx-8 rounded-2xl;
+
+    &.alert-blue {
+        @apply bg-blue-500;
+    }
+
+    &.alert-green {
+        @apply bg-green-500;
+    }
+
+    .alert-body {
+        @apply flex flex-col gap-2;
+
+        .alert-title {
+            @apply text-lg font-bold;
+        }
+
+        .alert-description {
+            @apply text-base font-light mb-2;
+        }
+    }
+
+    .alert-btn-close {
+        @apply flex items-center ms-5;
+
+        img {
+            @apply size-5;
+        }
+    }
+}

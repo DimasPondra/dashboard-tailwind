@@ -454,4 +454,39 @@ aside .sidebar .sidebar-menu ul .menu-item.active h2 {
 }
 .label.label-blue span {
   @apply text-blue-500;
+}
+
+.btn-alert {
+  @apply relative text-white p-4 rounded-2xl;
+}
+.btn-alert.btn-alert-blue {
+  @apply bg-blue-500;
+}
+.btn-alert.btn-alert-green {
+  @apply bg-green-500;
+}
+
+.alert {
+  @apply absolute items-center text-white opacity-95 top-0 right-0 p-4 mt-8 mx-8 rounded-2xl;
+}
+.alert.alert-blue {
+  @apply bg-blue-500;
+}
+.alert.alert-green {
+  @apply bg-green-500;
+}
+.alert .alert-body {
+  @apply flex flex-col gap-2;
+}
+.alert .alert-body .alert-title {
+  @apply text-lg font-bold;
+}
+.alert .alert-body .alert-description {
+  @apply text-base font-light mb-2;
+}
+.alert .alert-btn-close {
+  @apply flex items-center ms-5;
+}
+.alert .alert-btn-close img {
+  @apply size-5;
 }/*# sourceMappingURL=main.css.map */
